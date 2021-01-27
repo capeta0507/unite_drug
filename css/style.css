@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #88cdf6;
+}
 .btn-top{
     position: fixed;
     width: 50px;
