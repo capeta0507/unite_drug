@@ -29,6 +29,24 @@
   </script>
 </head>
 <body>
-  
+  <a href="##" class="btn-top"><img src="images/btn-top.png" alt=""></a>
+  <script>
+    $('.btn-top').click(function(){
+      $('html, body').animate({
+              scrollTop: 0
+          }, 300);
+      return false;
+    });
+
+    $(window).scroll(function(){
+      var window_scrollTop = $(window).scrollTop();
+      // last=$("body").height()-$(window).height()-150
+      if(window_scrollTop > 200){
+        $(".btn-top").stop().fadeIn(300);
+      }else{
+        $(".btn-top").stop().fadeOut(100);
+      }
+    });
+  </script>
 </body>
 </html>
