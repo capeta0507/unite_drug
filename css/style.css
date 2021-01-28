@@ -1,10 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&subset=chinese-traditional,japanese);
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
+    font-family: 'Noto Sans TC', '思源黑體', sans-serif !important;
     background-color: #88cdf6;
+}
+.main_container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .btn-top{
     position: fixed;
@@ -16,6 +23,67 @@ body{
 }
 .btn-top img{
     width: 100%;
+}
+.rightBtn_group {
+    position: fixed;
+    width: 65px;
+    height: 500px;
+    top: 33%;
+    right: 0;
+    z-index: 19;
+}
+.rightBtn_group .img_buyNow {
+    position: absolute;
+    right: 0;
+}
+.rightBtn_group .img_buyNow .buyNow_img{
+    width: 65px;
+    height: auto;
+}
+.rightBtn_group .shop_btn1 {
+    position: absolute;
+    right: 0;
+    top: 190px;
+    cursor: pointer;
+}
+.rightBtn_group .shop_btn2 {
+    position: absolute;
+    right: 0;
+    top: 255px;
+    cursor: pointer;
+}
+.rightBtn_group .shop_btn3 {
+    position: absolute;
+    right: 0;
+    top: 320px;
+    cursor: pointer;
+}
+.max_width {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.down_arrow {
+    position: absolute;
+    left: 30%;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    animation: arr_down 1s ease-out infinite;
+    animation-fill-mode: both;
+}
+@keyframes arr_down {
+    0% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: 5%;
+    }
 }
 @media screen and (max-width: 1024px){
     .btn-top{
