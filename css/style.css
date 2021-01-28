@@ -203,12 +203,14 @@ body{
     float: left;
     cursor: pointer;
     position: relative;
+    transition: all .7s;
 }
 .witness_content .win_right{
     width: 70%;
     float: right;
     cursor: pointer;
     position: relative;
+    transition: all .7s;
 }
 .witness_content .win_left.mt01{
     margin-top: -10px;
@@ -233,10 +235,12 @@ body{
     position: relative;
     /* display: flex;
     justify-content: space-between; */
+    transition: all .7s;
 }
 .witness_content .blog_item01{
     width: 25%;
     position: absolute;
+    transition: all .7s;
 }
 .witness_content .blog_item01 img{
     width: 100%;
@@ -325,6 +329,99 @@ body{
 .blog_item01:hover ,.win_left:hover, .win_right:hover{
     transform: scale3d(1.1, 1.1, 1);
 }
+.q_a{
+    width: 100%;
+}
+.q_a .subtitle{
+    width: 20%;
+    margin: 0 auto;
+}
+.q_a .qa_book{
+    width: 100%;
+    margin: 0 auto;
+}
+.q_a .qa_book img{
+    width: 100%;
+    height: auto;
+}
+.sales .subtitle{
+    width: 20%;
+    margin: 0 auto;
+}
+.sales_img{
+    width: 50%;
+    margin: 0 auto;
+}
+.sales_img img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.sales .sales_content{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ecfaff;
+    padding: 20px 80px;
+    margin-top: 50px;
+    box-shadow: 0 0 30px #ecfaff;
+    margin-bottom: 90px;
+}
+.sales .sales_content .sales_title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: #3e3a39;
+    margin-top: -55px;
+}
+.sales .sales_content .sales_logo_ctn{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.sales_logo_ctn .sales_logo {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+.sales_logo_ctn .sales_logo.sales01{
+    width: 9%;
+}
+.sales_logo_ctn .sales_logo.sales02{
+    width: 33%;
+}
+.sales_logo_ctn .sales_logo.sales03{
+    width: 23%;
+}
+.sales_logo_ctn .sales_logo img{
+    width: 100%;
+    height: auto;
+}
+.sales_logo.sales_mt{
+    top: 20px;
+}
+.sales_logo.sales_mt2{
+    top: 10px;
+}
+.sales_content .sales_hospital{
+    width: 100%;
+    font-size: 16px;
+    color: #3e3a39;
+    margin: 30px 0;
+}
+.footer{
+    width: 100%;
+    background-color: #ecfaff;
+    text-align: center;
+    padding: 25px;
+    line-height: 30px;
+    color: #3e3a39;
+    position: relative;
+}
 .btn-top{
     position: fixed;
     width: 50px;
@@ -340,7 +437,7 @@ body{
     position: fixed;
     width: 65px;
     height: 500px;
-    top: 33%;
+    top: 20%;
     right: 0;
     z-index: 19;
 }
