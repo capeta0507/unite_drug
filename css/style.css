@@ -150,6 +150,35 @@ body{
 .supply_tag.supply07{
     margin-top: 20px;
 }
+.guarantee{
+    width: 100%;
+}
+.guarantee .subtitle{
+    width: 20%;
+    margin: 0 auto;
+}
+.guarantee .guarantee_content{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+.guarantee .left, .guarantee .right{
+    width: 50%;
+}
+.guarantee .guarantee_tag{
+    position: relative;
+}
+.guarantee .guarantee_tag img{
+    width: 100%;
+    height: 100%;
+}
+.guarantee_tag.guarantee_pos01{
+    width: 180%;
+    left: -65%;
+}
+.guarantee_tag.guarantee_pos02{
+    width: 90%;
+}
 .btn-top{
     position: fixed;
     width: 50px;
