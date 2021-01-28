@@ -104,6 +104,51 @@ body{
 }
 .supply{
     width: 100%;
+    padding-bottom: 60px;
+}
+.supply .subtitle{
+    width: 40%;
+    margin: 0 auto;
+}
+.subtitle img{
+    width: 100%;
+    height: auto;
+}
+.supply .supply_content{
+    width: 100%;
+    display: flex;
+}
+.supply .supply_content .left, .supply .supply_content .right{
+    width: 50%;
+}
+.supply .supply_content .supply_tag{
+    width: 100%;
+    position: relative;
+}
+.supply .supply_content .supply_tag img{
+    width: 100%;
+    height: auto;
+}
+.supply_tag.supply01{
+    margin-top: -10px;
+}
+.supply_tag.supply02{
+    margin-top: 160px;
+}
+.supply_tag.supply03{
+    margin-top: 10px;
+}
+.supply_tag.supply04{
+    margin-top: -10px;
+}
+.supply_tag.supply05{
+    margin-top: 20px;
+}
+.supply_tag.supply06{
+    margin-top: 40px;
+}
+.supply_tag.supply07{
+    margin-top: 20px;
 }
 .btn-top{
     position: fixed;
