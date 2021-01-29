@@ -254,10 +254,13 @@ body{
 .banner .item.item_ani{
     right: -70%;
 }
-.banner .name{
+.banner .mb_point{
     width: 100%;
     height: auto;
     transition: all .7s;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
 }
 .header{
     width: 100%;
@@ -619,6 +622,21 @@ body{
     left: 0;
     bottom: 10%;
     z-index: 6;
+    animation: btn_ani 1s ease-out infinite;
+    animation-fill-mode: both;
+}
+@keyframes btn_ani {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 5%;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 .mb_btn .prev{
     width: 50px;
@@ -687,6 +705,7 @@ body{
     letter-spacing: 5px;
     color: #3e3a39;
     margin-top: -55px;
+    text-shadow: 0 0 5px rgba(255, 255, 255);
 }
 .sales .sales_content .sales_logo_ctn{
     width: 100%;
@@ -813,19 +832,6 @@ body{
     max-width: 100%;
     height: auto;
 }
-@keyframes arr_down {
-    0% {
-        bottom: 5%;
-    }
-
-    50% {
-        bottom: 10%;
-    }
-
-    100% {
-        bottom: 5%;
-    }
-}
 .mbnone{
     display: block;
 }
@@ -839,13 +845,15 @@ body{
     display: none;
 }
 .mb_banner{
-    width: 100%;
+    width: 168%;
     display: flex;
     transition: all .7s;
+    margin-top: -101px;
 }
 .mb_people{
-    width: 30%;
+    width: 25%;
     position: relative;
+    margin-top: 100px;
     left: 0;
     transition: all .7s;
 }
@@ -853,9 +861,9 @@ body{
     left: -50%;
 }
 .mb_item{
-    width: 70%;
+    width: 80%;
     position: relative;
-    right: 0;
+    right: 120px;
     transition: all .7s;
 }
 .mb_item.item_ani{
@@ -942,7 +950,7 @@ body{
         position: relative;
         top: 0;
         left: 0;
-        margin-top: -75px;
+        margin-top: -95px;
     }
     .banner .item{
         width: 100%;
