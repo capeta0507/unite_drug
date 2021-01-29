@@ -164,7 +164,11 @@
         <div id="section2"></div>
         <div class="subtitle"><img src="images/title03.png" alt=""></div>
         <div class="qa_book">
-          <img src="images/qa_book.png" alt="">
+          <img class="book_img" src="images/qa_book.png" alt="" style="left: 0;">
+          <div class="mb_btn">
+            <div id="btn_prev" class="prev" style="display: none;"></div>
+            <div id="btn_next" class="next"></div>
+          </div>
         </div>
       </div>
       <div id="b6" class="sales" style="opacity: 0;transition: all .7s;">
@@ -381,6 +385,20 @@
           offset: '70%'
       });
     }
+
+    $('#btn_prev').on('click', function(){
+      console.log('prev')
+      $('.book_img').css('left', '0%');
+      $('#btn_prev').hide();
+      $('#btn_next').show();
+    });
+
+    $('#btn_next').on('click', function(){
+      console.log('next')
+      $('.book_img').css('left', '-100%');
+      $('#btn_next').hide();
+      $('#btn_prev').show();
+    });
   </script>
 </body>
 </html>
