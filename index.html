@@ -69,18 +69,18 @@
     <div class="main_container">
       <div class="banner">
         <div class="mbnone">
-          <img class="people" src="images/men.png" alt="">
-          <img class="big_title" src="images/title.png" alt="">
-          <img class="item" src="images/item4.png" alt="">
+          <img class="people people_ani" src="images/men.png" alt="">
+          <img class="big_title title_ani" src="images/title.png" alt="">
+          <img class="item item_ani" src="images/item4.png" alt="">
         </div>
         <div class="mbBlock">
-          <img class="big_title" src="images/title.png" alt="">
+          <img class="big_title title_ani" src="images/title.png" alt="">
           <div class="mb_banner">
-            <div class="mb_people">
+            <div class="mb_people people_ani">
               <img class="people" src="images/mb_people.png" alt="">
               <img class="name" src="images/mb_name.png" alt="">
             </div>
-            <div class="mb_item"><img class="item" src="images/m_item.png" alt=""></div>
+            <div class="mb_item item_ani"><img class="item" src="images/m_item.png" alt=""></div>
           </div>
         </div>
       </div>
@@ -178,10 +178,10 @@
           <div class="sales_logo_ctn">
             <div class="sales_logo sales01"><a href="#" target="_blank"><img src="images/7-11.png" alt=""></a></div>
             <div class="sales_logo sales02 sales_mt"><a href="#" target="_blank"><img src="images/cosmed_footer.png" alt=""></a></div>
-            <div class="sales_logo sales03 sales_mt"><a href="#" target="_blank"><img src="images/watsons_footer.png" alt=""></a></div>
+            <div class="sales_logo sales03 sales_mt3"><a href="#" target="_blank"><img src="images/watsons_footer.png" alt=""></a></div>
             <div class="sales_logo sales03"><a href="#" target="_blank"><img src="images/carrefour.png" alt=""></a></div>
             <div class="sales_logo sales03"><a href="#" target="_blank"><img src="images/biotech.png" alt=""></a></div>
-            <div class="sales_logo sales03 sales_mt"><a href="#" target="_blank"><img src="images/greet_tree.png" alt=""></a></div>
+            <div class="sales_logo sales03 sales_mt3"><a href="#" target="_blank"><img src="images/greet_tree.png" alt=""></a></div>
           </div>
         </div>
         <div class="sales_content">
@@ -255,6 +255,15 @@
       const loader = document.querySelector('.loader');
       setTimeout(function(){
         loader.className += ' hidden' // class "loader hidden"
+        setTimeout(function(){
+          $('.big_title').removeClass('title_ani');
+          setTimeout(function(){
+            $('.people').removeClass('people_ani');
+            $('.item').removeClass('item_ani');
+            $('.mb_people').removeClass('people_ani');
+            $('.mb_item').removeClass('item_ani');
+          },500);
+        },700);
       },1000);
     });
 
