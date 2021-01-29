@@ -770,7 +770,7 @@ body{
     top: 20%;
     right: 0;
     z-index: 19;
-    display: none;
+    display: block;
 }
 .rightBtn_group .img_buyNow {
     position: absolute;
@@ -861,9 +861,13 @@ body{
 .mb_item.item_ani{
     right: -70%;
 }
-#section1, #section2, #section3, #section4{
+#section1, #section2, #section3{
     position: absolute;
     top: -100px;
+}
+#section4{
+    position: absolute;
+    top: 0px;
 }
 @media screen and (max-width: 1680px){
     .content{
@@ -1035,6 +1039,7 @@ body{
         height: 300px;
         top: unset;
         bottom: 20%;
+        display: none;
     }
     .rightBtn_group .img_buyNow .buyNow_img {
         width: 50px;
