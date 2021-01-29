@@ -29,6 +29,9 @@
   </script>
 </head>
 <body>
+  <div class="loader">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> 
+  </div>
   <div class="content">
     <div class="header">
       <div class="main_container">
@@ -40,7 +43,7 @@
             <a href="#section1" class="headItem">口碑保證</a>
             <a href="#section2" class="headItem">Q&A</a>
             <a href="#section3" class="headItem">銷售通路</a>
-            <a href="#" class="headItem"><img src="images/fbicon.png" alt=""></a>
+            <a href="https://www.facebook.com/MyHealthDiary" class="headItem"><img src="images/fbicon.png" alt=""></a>
           </div>
           <a href="##" class="menu-m">
             <!-- <img src="img/menu-m.png" alt=""> -->
@@ -60,7 +63,7 @@
         <li><a href="#section1" class="headItem">口碑保證</a></li>
         <li><a href="#section2" class="headItem">Q&A</a></li>
         <li><a href="#section3" class="headItem">銷售通路</a></li>
-        <li><a href="#" class="headItem"><img src="images/fbicon.png" alt=""></a></li>
+        <li><a href="https://www.facebook.com/MyHealthDiary" class="headItem"><img src="images/fbicon.png" alt=""></a></li>
       </ul>
     </div>
     <div class="main_container">
@@ -122,6 +125,7 @@
         </div>
       </div>
       <div id="b4" class="witness" style="opacity: 0;transition: all .7s;">
+        <div id="section1"></div>
         <div class="subtitle"><img src="images/title05.png" alt=""></div>
         <div class="witness_content">
           <div class="win_left mt01"><a href="https://reurl.cc/bzngqr" target="_blank"><img src="images/blog_pic01.png" alt=""></a></div>
@@ -157,12 +161,14 @@
         </div>
       </div>
       <div id="b5" class="q_a" style="opacity: 0;transition: all .7s;">
+        <div id="section2"></div>
         <div class="subtitle"><img src="images/title03.png" alt=""></div>
         <div class="qa_book">
           <img src="images/qa_book.png" alt="">
         </div>
       </div>
       <div id="b6" class="sales" style="opacity: 0;transition: all .7s;">
+        <div id="section3"></div>
         <div class="subtitle"><img src="images/title04.png" alt=""></div>
         <div class="sales_img">
           <img src="images/buy.png" alt="">
@@ -245,6 +251,13 @@
     </div>
   </div>
   <script>
+    window.addEventListener("load", function(){
+      const loader = document.querySelector('.loader');
+      setTimeout(function(){
+        loader.className += ' hidden' // class "loader hidden"
+      },1000);
+    });
+
     $('.btn-top').click(function(){
       $('html, body').animate({
               scrollTop: 0
@@ -272,6 +285,7 @@
     $('.headItem').click(function(){ 
       var typename = $(this).attr('href');
       $('html,body').animate({scrollTop:$(typename).offset().top}, 300);
+      $('.menu-block-mb').fadeOut()
     });
 
     $(window).scroll(function(){
