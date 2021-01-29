@@ -861,7 +861,7 @@ body{
 .mb_item.item_ani{
     right: -70%;
 }
-#section1, #section2, #section3{
+#section1, #section2, #section3, #section4{
     position: absolute;
     top: -100px;
 }
@@ -1234,7 +1234,7 @@ body{
         font-size: 15px;
         line-height: 26px;
     }
-    #section1, #section2, #section3{
+    #section1, #section2, #section3, #section4{
         position: absolute;
         top: -80px;
     }
