@@ -7,6 +7,9 @@
 a{
     text-decoration: none;
 }
+ul li{
+    list-style: none;
+}
 body{
     font-family: 'Noto Sans TC', '思源黑體', sans-serif !important;
     background-color: #88cdf6;
@@ -25,6 +28,8 @@ body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 5;
 }
 .banner{
     width: 100%;
@@ -54,12 +59,18 @@ body{
 }
 .header{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     height: auto;
     background-image: url(../images/banner_head.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+.header .cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .header .logo{
     width: 25%;
@@ -87,6 +98,44 @@ body{
     position: relative;
     top: -10px;
 }
+.menu-m{
+    display: inline-block;
+    float: right;
+    width: 50px;
+    margin-top: 14px;
+    margin-right: 10px;
+    display: none;
+}
+.menu-block-mb{
+    display: none;
+}
+.menu-block-mb a{
+    color: #3e3a39;
+    margin: 10px 0;
+    font-size: 3vh;
+}
+.bar{
+    width: 42px;
+    height: 4px;
+    background: #000;
+    margin: 8px 0;
+    display: block;
+    opacity: 1;
+}
+.active .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 9px);
+    transform: rotate(-45deg) translate(-6px, 9px);
+}
+
+.active .bar2{opacity: 0;}
+
+.active .bar3{
+    -webkit-transform: rotate(45deg) translate(-9px, -11px);
+    transform: rotate(45deg) translate(-9px, -11px);
+}
+.transition{
+    transition: all .4s;
+}
 .healthy{
     width: 100%;
     height: 1200px;
@@ -107,7 +156,7 @@ body{
     width: 100%;
     z-index: 4;
     top: -100px;
-    left: 0px;
+    left: 5px;
 }
 .supply{
     width: 100%;
@@ -344,6 +393,10 @@ body{
     width: 100%;
     height: auto;
 }
+.sales{
+    width: 100%;
+    margin: 0 auto;
+}
 .sales .subtitle{
     width: 20%;
     margin: 0 auto;
@@ -425,10 +478,14 @@ body{
 .gradual{
     width: 100%;
     position: absolute;
-    top: -100px;
+    top: -500px;
     left: 0;
     background-color: #ecfaff;
-    height: 100px;
+    background: -webkit-linear-gradient(rgba(255,255,255,0),#ecfaff);
+    background: -o-linear-gradient(rgba(255,255,255,0),#ecfaff);
+    background: -moz-linear-gradient(rgba(255,255,255,0),#ecfaff);
+    background: linear-gradient(rgba(255,255,255,0),#ecfaff);
+    height: 500px;
 }
 .btn-top{
     position: fixed;
@@ -490,15 +547,6 @@ body{
     max-width: 100%;
     height: auto;
 }
-.down_arrow {
-    position: absolute;
-    left: 30%;
-    right: 0;
-    margin: auto;
-    bottom: 0;
-    animation: arr_down 1s ease-out infinite;
-    animation-fill-mode: both;
-}
 @keyframes arr_down {
     0% {
         bottom: 5%;
@@ -510,6 +558,266 @@ body{
 
     100% {
         bottom: 5%;
+    }
+}
+.mbnone{
+    display: block;
+}
+.mbBlock{
+    display: none;
+}
+.mbFlexnone{
+    display: flex;
+}
+.mbFlex{
+    display: none;
+}
+.mb_banner{
+    width: 100%;
+    display: flex;
+}
+@media screen and (max-width: 1200px){
+    .mbnone{
+        display: none;
+    }
+    .mbBlock{
+        display: block;
+    }
+    .mbFlexnone{
+        display: none;
+    }
+    .mbFlex{
+        display: flex;
+    }
+    .menu-m{
+        display: block;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .banner .people{
+        width: 50%;
+        height: auto;
+        position: relative;
+        bottom: 0px;
+        left: 0;
+    }
+    .banner .big_title{
+        width: 120%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: -75px;
+    }
+    .banner .item{
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .header .logo {
+        width: 140px;
+        display: block;
+    }
+    .header {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .header .head_list {
+        display: none;
+    }
+    .menu-block-mb{
+        display: none;
+        background-color: rgba(255, 255, 255, .5);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 70px;
+        z-index: 100;
+    }
+    .menu-block-mb .menu li{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .header{
+        background-image: none;
+        background-color: #fff;
+    }
+    .healthy {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+    }
+    .healthy .health_pos {
+        height: auto;
+        position: relative;
+    }
+    .healthy .health_pos.pos01{
+        width: 100%;
+        z-index: 5;
+        top: 0;
+        left: 0;
+    }
+    .healthy .health_pos.pos02{
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        top: -50px;
+        left: -20px;
+    }
+    .rightBtn_group {
+        position: fixed;
+        width: 40px;
+        height: 400px;
+        top: 35%;
+    }
+    .rightBtn_group .img_buyNow .buyNow_img {
+        width: 40px;
+    }
+    .rightBtn_group .shop_btn1 {
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        cursor: pointer;
+    }
+    .rightBtn_group .shop_btn2 {
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 163px;
+        cursor: pointer;
+    }
+    .rightBtn_group .shop_btn3 {
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 250px;
+        cursor: pointer;
+    }
+    .rightBtn_group .shop_btn4 {
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 205px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .supply .subtitle {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .guarantee .subtitle {
+        width: 35%;
+        margin: 0 auto;
+    }
+    .witness {
+        width: 100%;
+        height: auto;
+    }
+    .witness .subtitle {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .witness_content .win_left.mt01 {
+        margin-top: 0;
+    }
+    .witness_content .win_left {
+        width: 100%;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        transition: all .7s;
+    }
+    .witness_content .win_right.mt01 {
+        margin-top: 0;
+    }
+    .witness_content .win_right {
+        width: 100%;
+        float: right;
+        cursor: pointer;
+        position: relative;
+        transition: all .7s;
+    }
+    .witness_content .win_left.mt02 {
+        margin-top: 0;
+    }
+    .witness_content .win_right.mt02 {
+        margin-top: 0px;
+    }
+    .witness_content .witness_blog {
+        width: 100%;
+        position: relative;
+        transition: all .7s;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .witness_content .blog_item01 {
+        width: 33%;
+        position: relative;
+        transition: all .7s;
+        top: auto;
+        left: auto;
+    }
+    .q_a .subtitle {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .sales{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sales .subtitle {
+        width: 35%;
+        margin: 0 auto;
+    }
+    .sales .sales_content .sales_title {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 5px;
+        color: #3e3a39;
+        margin-top: -45px;
+    }
+    .sales .sales_content {
+        width: 100%;
+        border-radius: 15px;
+        background-color: #ecfaff;
+        padding: 20px 30px;
+        margin-top: 50px;
+        box-shadow: 0 0 30px #ecfaff;
+        margin-bottom: 90px;
+    }
+    .sales_logo.sales_mt {
+        top: 0;
+    }
+    .sales_logo.sales_mt2 {
+        top: 0;
+    }
+    .sales_logo_ctn .sales_logo.sales01 {
+        width: 12%;
+    }
+    .sales_logo_ctn .sales_logo.sales02 {
+        width: 35%;
+    }
+    .footer {
+        width: 100%;
+        background-color: #ecfaff;
+        text-align: center;
+        padding: 25px;
+        line-height: 24px;
+        font-size: 12px;
+        color: #3e3a39;
+        position: relative;
     }
 }
 @media screen and (max-width: 1024px){
