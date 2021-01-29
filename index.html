@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <script src="js/jquery-3.5.1.min.js"></script>
-  <!-- <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script> -->
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <script src="js/jquery.waypoints.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187929913-1"></script>
   <script>
@@ -68,8 +68,7 @@
         <div class="mbnone">
           <img class="people" src="images/men.png" alt="">
           <img class="big_title" src="images/title.png" alt="">
-          <img class="item" src="images/item.png" alt="">
-          <!-- <img class="item" src="images/bubble2.png" alt=""> -->
+          <img class="item" src="images/item4.png" alt="">
         </div>
         <div class="mbBlock">
           <img class="big_title" src="images/title.png" alt="">
@@ -82,11 +81,11 @@
           </div>
         </div>
       </div>
-      <div class="healthy">
+      <div id="b1" class="healthy" style="opacity: 0;transition: all .7s;">
         <img class="health_pos pos01" src="images/health.png" alt="">
         <img class="health_pos pos02" src="images/light.png" alt="">
       </div>
-      <div class="supply">
+      <div id="b2" class="supply" style="opacity: 0;transition: all .7s;">
         <div class="subtitle"><img src="images/title01.png" alt=""></div>
         <div class="supply_content mbFlexnone">
           <div class="left">
@@ -111,7 +110,7 @@
           <div class="supply_tag supply07"><img src="images/supply07.png" alt=""></div>
         </div>
       </div>
-      <div class="guarantee">
+      <div id="b3" class="guarantee" style="opacity: 0;transition: all .7s;">
         <div class="subtitle"><img src="images/title02.png" alt=""></div>
         <div class="guarantee_content">
           <div class="left">
@@ -122,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="witness">
+      <div id="b4" class="witness" style="opacity: 0;transition: all .7s;">
         <div class="subtitle"><img src="images/title05.png" alt=""></div>
         <div class="witness_content">
           <div class="win_left mt01"><a href="https://reurl.cc/bzngqr" target="_blank"><img src="images/blog_pic01.png" alt=""></a></div>
@@ -157,13 +156,13 @@
           </div>
         </div>
       </div>
-      <div class="q_a">
+      <div id="b5" class="q_a" style="opacity: 0;transition: all .7s;">
         <div class="subtitle"><img src="images/title03.png" alt=""></div>
         <div class="qa_book">
           <img src="images/qa_book.png" alt="">
         </div>
       </div>
-      <div class="sales">
+      <div id="b6" class="sales" style="opacity: 0;transition: all .7s;">
         <div class="subtitle"><img src="images/title04.png" alt=""></div>
         <div class="sales_img">
           <img src="images/buy.png" alt="">
@@ -280,10 +279,85 @@
       // last=$("body").height()-$(window).height()-150
       if(window_scrollTop > 200){
         $(".btn-top").stop().fadeIn(300);
+        $('.rightBtn_group').stop().fadeIn(300);
       }else{
         $(".btn-top").stop().fadeOut(100);
+        $('.rightBtn_group').stop().fadeOut(100);
       }
     });
+    $.when( $.ready ).then(function() {
+      initScrollIn();
+    });
+
+    function initScrollIn(){
+      var $target = $("#b1");
+      $target.waypoint(function(direction) {
+        // console.log('direction', direction)
+        if (direction === "down"){
+          $("#b1").css({ opacity:1 });
+        } else {
+          $("#b1").css({ opacity:0 });
+        }
+      }, {
+          offset: '70%'
+      });
+
+      $target = $("#b2");
+      $target.waypoint(function(direction) {
+        // console.log('direction2', direction)
+        if (direction === "down"){
+          $("#b2").css({ opacity:1 });
+        } else {
+          $("#b2").css({ opacity:0 });
+        }
+      }, {
+          offset: '70%'
+      });
+      $target = $("#b3");
+      $target.waypoint(function(direction) {
+        // console.log('direction3', direction)
+        if (direction === "down"){
+          $("#b3").css({ opacity:1 });
+        } else {
+          $("#b3").css({ opacity:0 });
+        }
+      }, {
+          offset: '70%'
+      });
+      $target = $("#b4");
+      $target.waypoint(function(direction) {
+        // console.log('direction4', direction)
+        if (direction === "down"){
+          $("#b4").css({ opacity:1 });
+        } else {
+          $("#b4").css({ opacity:0 });
+        }
+      }, {
+          offset: '70%'
+      });
+      $target = $("#b5");
+      $target.waypoint(function(direction) {
+        // console.log('direction5', direction)
+        if (direction === "down"){
+          $("#b5").css({ opacity:1 });
+        } else {
+          $("#b5").css({ opacity:0 });
+        }
+      }, {
+          offset: '70%'
+      });
+      $target = $("#b6");
+      $target.waypoint(function(direction) {
+        // console.log('direction6', direction)
+        if (direction === "down"){
+          $("#b6").css({ opacity:1 });
+        } else {
+          $("#b6").css({ opacity:0 });
+        }
+      }, {
+          offset: '70%'
+      });
+    }
   </script>
 </body>
 </html>
