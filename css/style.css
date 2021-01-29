@@ -354,6 +354,7 @@ body{
 }
 #mob_submenu p {
     padding: 10px 0;
+    margin-bottom: 0;
 }
 #mob_submenu p a {
     font-size: 16px;
@@ -775,7 +776,7 @@ body{
     letter-spacing: 5px;
     color: #3e3a39;
     margin-top: -55px;
-    text-shadow: 0 0 20px rgba(255, 255, 255);
+    text-shadow: 0 0 5px rgba(255, 255, 255);
 }
 .sales .sales_content .sales_logo_ctn{
     width: 100%;
@@ -1178,12 +1179,24 @@ body{
         margin-top: 0;
     }
     .witness_content .win_left {
-        width: 130%;
+        width: 122%;
         float: none;
         cursor: pointer;
         position: relative;
         transition: all .7s;
         margin-left: -50px;
+    }
+    .witness_content .win_left2 {
+        width: 116%;
+        float: none;
+        cursor: pointer;
+        position: relative;
+        transition: all .7s;
+        margin-left: -50px;
+    }
+    .witness_content .win_left2 img{
+        width: 100%;
+        height: auto;
     }
     .witness_content .win_right.mt01 {
         margin-top: 0;
@@ -1195,6 +1208,18 @@ body{
         position: relative;
         transition: all .7s;
         margin-left: -67px;
+    }
+    .witness_content .win_right2 {
+        width: 115%;
+        float: none;
+        cursor: pointer;
+        position: relative;
+        transition: all .7s;
+        margin-left: -67px;
+    }
+    .witness_content .win_right2 img{
+        width: 100%;
+        height: auto;
     }
     .blog_item01:hover, .win_left:hover, .win_right:hover {
         transform: none;
