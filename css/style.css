@@ -195,25 +195,25 @@ body{
 }
 .content{
     width: 100%;
-    max-width: 1680px;
+    max-width: 1920px;
     margin: 0 auto;
     position: relative;
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 70px;
+    padding-top: 57px;
 }
 .main_container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
 }
 .banner{
     width: 100%;
-    height: 800px;
+    height: 1050px;
     position: relative;
     overflow: hidden;
     transition: all .7s;
@@ -270,6 +270,7 @@ body{
     background-repeat: no-repeat;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 20;
 }
 .header .cont{
@@ -356,7 +357,7 @@ body{
     width: 80%;
     z-index: 5;
     top: 100px;
-    left: 165px;
+    left: 200px;
 }
 .healthy .health_pos.pos02{
     width: 100%;
@@ -450,7 +451,7 @@ body{
 }
 .witness{
     width: 100%;
-    height: 3200px;
+    height: 3650px;
     position: relative;
 }
 .witness .subtitle{
@@ -864,6 +865,44 @@ body{
     position: absolute;
     top: -100px;
 }
+@media screen and (max-width: 1680px){
+    .content{
+        width: 100%;
+        max-width: 1680px;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../images/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 57px;
+    }
+    .banner{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+        transition: all .7s;
+    }
+    .healthy .health_pos.pos01{
+        width: 80%;
+        z-index: 5;
+        top: 100px;
+        left: 165px;
+    }
+    .witness{
+        width: 100%;
+        height: 3200px;
+        position: relative;
+    }
+    .main_container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+    }
+}
 @media screen and (max-width: 1200px){
     .mbnone{
         display: none;
@@ -1056,23 +1095,23 @@ body{
         margin-top: 0;
     }
     .witness_content .win_left {
-        width: 132%;
+        width: 136%;
         float: left;
         cursor: pointer;
         position: relative;
         transition: all .7s;
-        margin-left: -56px;
+        margin-left: -65px;
     }
     .witness_content .win_right.mt01 {
         margin-top: 0;
     }
     .witness_content .win_right {
-        width: 130%;
+        width: 140%;
         float: left;
         cursor: pointer;
         position: relative;
         transition: all .7s;
-        margin-left: -56px;
+        margin-left: -75px;
     }
     .blog_item01:hover, .win_left:hover, .win_right:hover {
         transform: none;
@@ -1204,7 +1243,7 @@ body{
     .btn-top{
         width: 40px;
         position: fixed;
-        bottom: 5%;
+        bottom: 2%;
         right: 1.5%;
         float: right;
     }
