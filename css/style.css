@@ -1109,7 +1109,7 @@ body{
     }
     .witness_content .win_left {
         width: 136%;
-        float: left;
+        float: none;
         cursor: pointer;
         position: relative;
         transition: all .7s;
@@ -1120,7 +1120,7 @@ body{
     }
     .witness_content .win_right {
         width: 140%;
-        float: left;
+        float: none;
         cursor: pointer;
         position: relative;
         transition: all .7s;
