@@ -307,7 +307,7 @@ body{
     display: inline-block;
     float: right;
     width: 50px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 10px;
     display: none;
 }
@@ -322,21 +322,21 @@ body{
 .bar{
     width: 42px;
     height: 4px;
-    background: #000;
+    background: rgb(124, 124, 124);
     margin: 8px 0;
     display: block;
     opacity: 1;
 }
 .active .bar1{
-    -webkit-transform: rotate(-45deg) translate(-6px, 9px);
-    transform: rotate(-45deg) translate(-6px, 9px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 10px);
+    transform: rotate(-45deg) translate(-8px, 10px);
 }
 
 .active .bar2{opacity: 0;}
 
 .active .bar3{
-    -webkit-transform: rotate(45deg) translate(-9px, -11px);
-    transform: rotate(45deg) translate(-9px, -11px);
+    -webkit-transform: rotate(45deg) translate(-7px, -9px);
+    transform: rotate(45deg) translate(-7px, -9px);
 }
 .transition{
     transition: all .4s;
@@ -909,12 +909,12 @@ body{
         right: 0;
     }
     .header .logo {
-        width: 140px;
+        width: 120px;
         display: block;
     }
     .header {
         width: 100%;
-        padding: 5px 0;
+        padding: 0;
     }
     .header .head_list {
         display: none;
@@ -927,7 +927,7 @@ body{
         text-align: center;
         padding: 20px 20px 0 20px;
         position: fixed;
-        top: 70px;
+        top: 57px;
         z-index: 100;
     }
     .menu-block-mb .menu li{
@@ -992,39 +992,40 @@ body{
     }
     .rightBtn_group {
         position: fixed;
-        width: 40px;
+        width: 50px;
         height: 300px;
-        top: 40%;
+        top: unset;
+        bottom: 20%;
     }
     .rightBtn_group .img_buyNow .buyNow_img {
-        width: 40px;
+        width: 50px;
     }
     .rightBtn_group .shop_btn1 {
-        width: 40px;
+        width: 50px;
         position: absolute;
         right: 0;
-        top: 120px;
+        top: 146px;
         cursor: pointer;
     }
     .rightBtn_group .shop_btn2 {
-        width: 40px;
+        width: 50px;
         position: absolute;
         right: 0;
-        top: 163px;
+        top: 197px;
         cursor: pointer;
     }
     .rightBtn_group .shop_btn3 {
-        width: 40px;
+        width: 50px;
         position: absolute;
         right: 0;
-        top: 250px;
+        top: 248px;
         cursor: pointer;
     }
     .rightBtn_group .shop_btn4 {
-        width: 40px;
+        width: 50px;
         position: absolute;
         right: 0;
-        top: 205px;
+        top: 300px;
         cursor: pointer;
         overflow: hidden;
     }
@@ -1204,7 +1205,7 @@ body{
         width: 40px;
         position: fixed;
         bottom: 5%;
-        right: 10%;
+        right: 1.5%;
         float: right;
     }
 }
