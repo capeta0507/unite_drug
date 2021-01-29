@@ -7,6 +7,9 @@
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
 ul li{
     list-style: none;
 }
@@ -202,7 +205,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 57px;
+    padding-top: 52px;
 }
 .main_container{
     width: 100%;
@@ -296,16 +299,61 @@ body{
     /* margin-top: 30px; */
     padding-top: 30px;
 }
-.header .head_list .headItem{
+.header .head_list .headItem, .header .head_list .headItem2{
     padding: 0 15px;
     color: #000;
     font-size: 18px;
+    position: relative;
+    cursor: pointer;
 }
 .header .head_list .headItem img{
     width: 50px;
     height: auto;
     position: relative;
     top: -10px;
+}
+.subMenu {
+    width: 230px;
+    background: rgba(228, 249, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px 0;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    margin-left: -110px;
+    display: none;
+    cursor: pointer;
+    transition: all .7s;
+}
+.subMenu p {
+    list-style: none;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+.subMenu p + p {
+    border-top: 1px solid #fff;
+}
+.subMenu p > a{
+    color: #000;
+}
+.subMenu p > a:hover{
+    color: rgb(38, 38, 219);
+    text-decoration: none;
+}
+.header .head_list .headItem:hover .subMenu{
+    display: block;
+}
+#mob_submenu{
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+#mob_submenu p {
+    padding: 10px 0;
+}
+#mob_submenu p a {
+    font-size: 16px;
 }
 .menu-m{
     display: inline-block;
@@ -317,6 +365,7 @@ body{
 }
 .menu-block-mb{
     display: none;
+    overflow: scroll;
 }
 .menu-block-mb a{
     color: #fff;
@@ -705,7 +754,7 @@ body{
     letter-spacing: 5px;
     color: #3e3a39;
     margin-top: -55px;
-    text-shadow: 0 0 5px rgba(255, 255, 255);
+    text-shadow: 0 0 20px rgba(255, 255, 255);
 }
 .sales .sales_content .sales_logo_ctn{
     width: 100%;
@@ -887,7 +936,7 @@ body{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding-top: 57px;
+        padding-top: 52px;
     }
     .banner{
         width: 100%;
@@ -976,9 +1025,9 @@ body{
         width: 100%;
         height: 100%;
         text-align: center;
-        padding: 20px 20px 0 20px;
+        padding: 20px 20px 30px 20px;
         position: fixed;
-        top: 57px;
+        top: 52px;
         z-index: 100;
     }
     .menu-block-mb .menu li{
@@ -1108,23 +1157,23 @@ body{
         margin-top: 0;
     }
     .witness_content .win_left {
-        width: 136%;
+        width: 130%;
         float: none;
         cursor: pointer;
         position: relative;
         transition: all .7s;
-        margin-left: -65px;
+        margin-left: -50px;
     }
     .witness_content .win_right.mt01 {
         margin-top: 0;
     }
     .witness_content .win_right {
-        width: 140%;
+        width: 130%;
         float: none;
         cursor: pointer;
         position: relative;
         transition: all .7s;
-        margin-left: -75px;
+        margin-left: -67px;
     }
     .blog_item01:hover, .win_left:hover, .win_right:hover {
         transform: none;
