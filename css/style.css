@@ -57,6 +57,10 @@ body{
     top: 150px;
     right: 0;
 }
+.banner .name{
+    width: 100%;
+    height: auto;
+}
 .header{
     width: 100%;
     /* display: flex;
@@ -102,7 +106,7 @@ body{
     display: inline-block;
     float: right;
     width: 50px;
-    margin-top: 14px;
+    margin-top: 10px;
     margin-right: 10px;
     display: none;
 }
@@ -110,7 +114,7 @@ body{
     display: none;
 }
 .menu-block-mb a{
-    color: #3e3a39;
+    color: #fff;
     margin: 10px 0;
     font-size: 3vh;
 }
@@ -141,6 +145,7 @@ body{
     height: 1200px;
     margin-top: 100px;
     position: relative;
+    overflow: hidden;
 }
 .healthy .health_pos{
     height: auto;
@@ -157,6 +162,14 @@ body{
     z-index: 4;
     top: -100px;
     left: 5px;
+    animation:turn-spark 5s ;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+@keyframes turn-spark
+{
+    from {transform: rotate(00deg);}
+    to {transform: rotate(360deg);}
 }
 .supply{
     width: 100%;
@@ -172,7 +185,6 @@ body{
 }
 .supply .supply_content{
     width: 100%;
-    display: flex;
 }
 .supply .supply_content .left, .supply .supply_content .right{
     width: 50%;
@@ -208,6 +220,7 @@ body{
 }
 .guarantee{
     width: 100%;
+    overflow: hidden;
 }
 .guarantee .subtitle{
     width: 20%;
@@ -282,14 +295,13 @@ body{
 .witness_content .witness_blog{
     width: 100%;
     position: relative;
-    /* display: flex;
-    justify-content: space-between; */
     transition: all .7s;
 }
 .witness_content .blog_item01{
     width: 25%;
     position: absolute;
     transition: all .7s;
+    z-index: 5;
 }
 .witness_content .blog_item01 img{
     width: 100%;
@@ -474,6 +486,7 @@ body{
     line-height: 30px;
     color: #3e3a39;
     position: relative;
+    font-size: 13px;
 }
 .gradual{
     width: 100%;
@@ -494,6 +507,7 @@ body{
     bottom: 8%;
     right: 5%;
     display: none;
+    z-index: 10;
 }
 .btn-top img{
     width: 100%;
@@ -576,6 +590,12 @@ body{
     width: 100%;
     display: flex;
 }
+.mb_people{
+    width: 30%;
+}
+.mb_item{
+    width: 70%;
+}
 @media screen and (max-width: 1200px){
     .mbnone{
         display: none;
@@ -599,7 +619,7 @@ body{
         overflow: hidden;
     }
     .banner .people{
-        width: 50%;
+        width: 100%;
         height: auto;
         position: relative;
         bottom: 0px;
@@ -614,7 +634,7 @@ body{
         margin-top: -75px;
     }
     .banner .item{
-        width: 50%;
+        width: 100%;
         height: auto;
         position: relative;
         top: 0;
@@ -633,26 +653,27 @@ body{
     }
     .menu-block-mb{
         display: none;
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(0, 0, 0, .9);
         width: 100%;
         height: 100%;
         text-align: center;
-        padding: 0 20px;
+        padding: 20px 20px 0 20px;
         position: fixed;
         top: 70px;
         z-index: 100;
     }
     .menu-block-mb .menu li{
         width: 100%;
-        margin: 15px 0;
+        margin: 32px 0;
     }
     .header{
         background-image: none;
         background-color: #fff;
     }
     .healthy {
-        width: 100%;
+        width: 95%;
         height: auto;
+        margin: 0 auto;
         margin-top: 50px;
         position: relative;
     }
@@ -673,11 +694,39 @@ body{
         top: -50px;
         left: -20px;
     }
+    .supply {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .supply .supply_content {
+        width: 88%;
+    }
+    .supply_tag.supply01{
+        margin-top: 0;
+    }
+    .supply_tag.supply02{
+        margin-top: 0;
+    }
+    .supply_tag.supply03{
+        margin-top: 0;
+    }
+    .supply_tag.supply04{
+        margin-top: 0;
+    }
+    .supply_tag.supply05{
+        margin-top: 0;
+    }
+    .supply_tag.supply06{
+        margin-top: 0;
+    }
+    .supply_tag.supply07{
+        margin-top: 0;
+    }
     .rightBtn_group {
         position: fixed;
         width: 40px;
         height: 400px;
-        top: 35%;
+        top: 40%;
     }
     .rightBtn_group .img_buyNow .buyNow_img {
         width: 40px;
@@ -712,40 +761,49 @@ body{
         overflow: hidden;
     }
     .supply .subtitle {
-        width: 50%;
+        width: 77%;
         margin: 0 auto;
     }
     .guarantee .subtitle {
-        width: 35%;
+        width: 60%;
         margin: 0 auto;
     }
     .witness {
         width: 100%;
         height: auto;
     }
+    .witness .witness_content{
+        width: 100%;
+        overflow: hidden;
+    }
     .witness .subtitle {
-        width: 30%;
+        width: 54%;
         margin: 0 auto;
     }
     .witness_content .win_left.mt01 {
         margin-top: 0;
     }
     .witness_content .win_left {
-        width: 100%;
+        width: 132%;
         float: left;
         cursor: pointer;
         position: relative;
         transition: all .7s;
+        margin-left: -56px;
     }
     .witness_content .win_right.mt01 {
         margin-top: 0;
     }
     .witness_content .win_right {
-        width: 100%;
-        float: right;
+        width: 130%;
+        float: left;
         cursor: pointer;
         position: relative;
         transition: all .7s;
+        margin-left: -56px;
+    }
+    .blog_item01:hover, .win_left:hover, .win_right:hover {
+        transform: none;
     }
     .witness_content .win_left.mt02 {
         margin-top: 0;
@@ -767,8 +825,23 @@ body{
         top: auto;
         left: auto;
     }
+    .guarantee .guarantee_content {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+    }
+    .guarantee .left, .guarantee .right {
+        width: 100%;
+    }
+    .guarantee .right{
+        margin-top: -120px;
+    }
+    .guarantee_tag.guarantee_pos02 {
+        width: 90%;
+        margin: 0 auto;
+    }
     .q_a .subtitle {
-        width: 30%;
+        width: 54%;
         margin: 0 auto;
     }
     .sales{
@@ -776,7 +849,7 @@ body{
         margin: 0 auto;
     }
     .sales .subtitle {
-        width: 35%;
+        width: 60%;
         margin: 0 auto;
     }
     .sales .sales_content .sales_title {
@@ -793,9 +866,9 @@ body{
         border-radius: 15px;
         background-color: #ecfaff;
         padding: 20px 30px;
-        margin-top: 50px;
+        margin-top: 100px;
         box-shadow: 0 0 30px #ecfaff;
-        margin-bottom: 90px;
+        margin-bottom: 0;
     }
     .sales_logo.sales_mt {
         top: 0;
@@ -807,7 +880,14 @@ body{
         width: 12%;
     }
     .sales_logo_ctn .sales_logo.sales02 {
-        width: 35%;
+        width: 48%;
+    }
+    .sales_logo_ctn .sales_logo.sales03 {
+        width: 30%;
+    }
+    .sales_img {
+        width: 90%;
+        margin: 0 auto;
     }
     .footer {
         width: 100%;
@@ -819,12 +899,18 @@ body{
         color: #3e3a39;
         position: relative;
     }
+    .sales_content .sales_hospital {
+        width: 100%;
+        font-size: 15px;
+        line-height: 26px;
+    }
 }
 @media screen and (max-width: 1024px){
     .btn-top{
+        width: 40px;
         position: fixed;
         bottom: 8%;
-        right: 5%;
+        right: 0%;
         float: right;
     }
 }
