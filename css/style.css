@@ -218,7 +218,6 @@ body{
     width: 100%;
     height: 1050px;
     position: relative;
-    overflow: hidden;
     transition: all .7s;
 }
 .banner .people{
@@ -250,15 +249,15 @@ body{
 }
 @keyframes title_sk{
     0%  {
-        -webkit-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+        -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
         filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
     }
     50% {
-        -webkit-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+        -webkit-filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
     }
     100%{
-        -webkit-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+        -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
         filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
     }
 }
@@ -278,9 +277,38 @@ body{
     right: -70%;
 }
 @keyframes item{
-    0%  {top: 60px}
-    50% {top: 75px}
-    100%{top: 60px}
+    0%  {
+        top: 60px;
+        -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    }
+    50% {
+        top: 75px;
+        -webkit-filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+    }
+    100%{
+        top: 60px;
+        -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    }
+}
+@keyframes m_item{
+    0%  {
+        top: 0px;
+        -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    }
+    50% {
+        top: 15px;
+        -webkit-filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+    }
+    100%{
+        top: 0px;
+        -webkit-filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+    }
 }
 .banner .mb_point{
     width: 100%;
@@ -987,7 +1015,6 @@ body{
         width: 100%;
         height: 800px;
         position: relative;
-        overflow: hidden;
         transition: all .7s;
     }
     .healthy .health_pos.pos01{
@@ -1030,7 +1057,7 @@ body{
         height: auto;
         position: relative;
         overflow: hidden;
-        padding-bottom: 85px;
+        padding-bottom: 30px;
     }
     .banner .people{
         width: 100%;
@@ -1052,7 +1079,10 @@ body{
         height: auto;
         position: relative;
         top: 0;
-        right: 0;
+        right: 10px;
+        animation-name:m_item;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
     }
     .header .logo {
         width: 120px;
