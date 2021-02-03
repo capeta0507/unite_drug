@@ -1269,7 +1269,7 @@ body{
         cursor: pointer;
         position: relative;
         transition: all .7s;
-        margin-left: -40px;
+        margin-left: -30px;
     }
     .witness_content .win_right2 img{
         width: 100%;
