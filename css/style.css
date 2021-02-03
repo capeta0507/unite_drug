@@ -241,9 +241,9 @@ body{
     z-index: 5;
     opacity: 1;
     transition: all .7s;
-    animation-name:title_sk;
+    /* animation-name:title_sk;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 .banner .big_title.title_ani{
     opacity: 0;
@@ -270,9 +270,9 @@ body{
     right: 0;
     z-index: 4;
     transition: all .7s;
-    animation-name:item;
+    /* animation-name:item;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 .banner .item.item_ani{
     right: -70%;
@@ -1081,9 +1081,9 @@ body{
         position: relative;
         top: 0;
         right: 10px;
-        animation-name:m_item;
+        /* animation-name:m_item;
         animation-duration: 1.5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite; */
     }
     .header .logo {
         width: 120px;
@@ -1233,15 +1233,15 @@ body{
         margin-top: 0;
     }
     .witness_content .win_left {
-        width: 103%;
+        width: 100%;
         float: none;
         cursor: pointer;
         position: relative;
         transition: all .7s;
-        margin-left: -12px;
+        margin-left: -38px;
     }
     .witness_content .win_left2 {
-        width: 106%;
+        width: 100%;
         float: none;
         cursor: pointer;
         position: relative;
@@ -1256,7 +1256,7 @@ body{
         margin-top: 0;
     }
     .witness_content .win_right {
-        width: 110%;
+        width: 100%;
         float: none;
         cursor: pointer;
         position: relative;
@@ -1264,7 +1264,7 @@ body{
         margin-left: -20px;
     }
     .witness_content .win_right2 {
-        width: 108%;
+        width: 100%;
         float: none;
         cursor: pointer;
         position: relative;
