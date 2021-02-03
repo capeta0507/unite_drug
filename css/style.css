@@ -218,6 +218,7 @@ body{
     width: 100%;
     height: 1050px;
     position: relative;
+    overflow: hidden;
     transition: all .7s;
 }
 .banner .people{
