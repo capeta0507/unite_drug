@@ -311,6 +311,65 @@ body{
         filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
     }
 }
+.slip_light{
+    width: 249px;
+    height: 373px;
+    position: absolute;
+    top: 32%;
+    right: 22%;
+    /* background-color: #fff; */
+    overflow: hidden;
+    transition: all .7s;
+}
+.slip_light.slip_ani{
+    right: -22%;
+}
+.slip_light:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100px; /**光标的宽度，可根据实际调整**/
+    z-index: 5;
+    background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: searchLights 2s ease-in 1s infinite;
+    -o-animation: searchLights 2s ease-in 1s infinite;
+    animation: searchLights 2s ease-in 1s infinite; /**第一个数字参数控制扫光速度，数字越大越慢**/
+}
+@keyframes searchLights {
+    0% {
+        left: -200px;
+        top: -100%;
+    }
+    100% {
+        left: -60px;
+        top: 150%;
+    }
+}
+@keyframes searchLights_p {
+    0% {
+        left: -200px;
+        top: -100%;
+    }
+    100% {
+        left: -100px;
+        top: 150%;
+    }
+}
+@keyframes searchLights_m {
+    0% {
+        left: -200px;
+        top: -100%;
+    }
+    100% {
+        left: -30px;
+        top: 150%;
+    }
+}
 .banner .mb_point{
     width: 100%;
     height: auto;
@@ -415,7 +474,7 @@ body{
     width: 30px;
     height: auto;
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: -40px; 
     transition: all .5s;
     /* transform: scaleY(1); */
@@ -430,7 +489,7 @@ body{
     display: inline-block;
     float: right;
     width: 50px;
-    margin-top: 5px;
+    margin-top: 11px;
     margin-right: 10px;
     display: none;
 }
@@ -972,6 +1031,7 @@ body{
     display: flex;
     transition: all .7s;
     margin-top: -101px;
+    position: relative;
 }
 .mb_people{
     width: 25%;
@@ -986,7 +1046,7 @@ body{
 .mb_item{
     width: 80%;
     position: relative;
-    right: 120px;
+    right: 310px;
     transition: all .7s;
 }
 .mb_item.item_ani{
@@ -1085,10 +1145,6 @@ body{
         animation-duration: 1.5s;
         animation-iteration-count: infinite; */
     }
-    .header .logo {
-        width: 120px;
-        display: block;
-    }
     .header {
         width: 100%;
         padding-bottom: 3px;
@@ -1104,7 +1160,7 @@ body{
         text-align: center;
         padding: 20px 20px 30px 20px;
         position: fixed;
-        top: 52px;
+        top: 68px;
         z-index: 100;
     }
     .menu-block-mb .menu li{
@@ -1400,6 +1456,29 @@ body{
         position: absolute;
         top: -80px;
     }
+    .slip_light {
+        width: 33%;
+        height: 54.8%;
+        position: absolute;
+        top: 28.9%;
+        right: 35.8%;
+    }
+    .slip_light:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 100px; /**光标的宽度，可根据实际调整**/
+        z-index: 5;
+        background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: searchLights_p 2s ease-in 1s infinite;
+        -o-animation: searchLights_p 2s ease-in 1s infinite;
+        animation: searchLights_p 2s ease-in 1s infinite; /**第一个数字参数控制扫光速度，数字越大越慢**/
+    }
 }
 @media screen and (max-width: 1024px){
     .btn-top{
@@ -1408,5 +1487,76 @@ body{
         bottom: 2%;
         right: 1.5%;
         float: right;
+    }
+
+}
+@media screen and (max-width: 992px){
+    .mb_item{
+        width: 80%;
+        position: relative;
+        right: 240px;
+        transition: all .7s;
+    }
+}
+@media screen and (max-width: 500px){
+    .header .logo {
+        width: 120px;
+        display: block;
+    }
+    .menu-m{
+        display: inline-block;
+        float: right;
+        width: 50px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    .menu-block-mb{
+        display: none;
+        background-color: rgba(0, 0, 0, .9);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 20px 20px 30px 20px;
+        position: fixed;
+        top: 52px;
+        z-index: 100;
+    }
+    .headItem2 .menu_dw{
+        width: 30px;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        right: -40px; 
+        transition: all .5s;
+        /* transform: scaleY(1); */
+    }
+    .mb_item {
+        width: 80%;
+        position: relative;
+        right: 120px;
+        transition: all .7s;
+    }
+    .slip_light {
+        width: 33%;
+        height: 54.8%;
+        position: absolute;
+        top: 28.9%;
+        right: 36.8%;
+    }
+    .slip_light:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 100px; /**光标的宽度，可根据实际调整**/
+        z-index: 5;
+        background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: searchLights_m 2s ease-in 1s infinite;
+        -o-animation: searchLights_m 2s ease-in 1s infinite;
+        animation: searchLights_m 2s ease-in 1s infinite; /**第一个数字参数控制扫光速度，数字越大越慢**/
     }
 }
