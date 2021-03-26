@@ -10,12 +10,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="我的健康日記 超前部署益生菌 提升保護力!" />
   <meta property="og:description" content="我的健康日記 超前部署益生菌，添加150億專為調整體質研發的益生菌，搭配守護健康營養素C、D3、鋅，加上酵母β聚葡萄糖，和歐洲百年保健百寶箱--接骨木莓，完整營養補給幫助全家人輕鬆抵抗外界環境威脅，季節變化帶來的困擾也不怕!" />
-  <meta property="og:image" content="images/fb_share.jpg" />
+  <meta property="og:image" content="http://www.myhealthdiary.com.tw/preventive/images/fb_share.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="750" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.cookie.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,6 +29,39 @@
     gtag('config', 'UA-187929913-1');
   </script>
   <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'424166'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2022995744670805'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=2022995744670805&ev=PageView
+    &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script>
+    $(document).ready(function(){
+      var play_yt = $.cookie('play_yt');
+     if (play_yt == null) {
+      // alert('播放影片');
+      openyt();
+      $.cookie('play_yt', 'Yes');
+    }
+    })
+    function openyt(){
+      $('.firstVideo').css('display', 'block');
+    }
+</script>
 </head>
 <body>
   <div class="loader">
@@ -46,7 +80,7 @@
                 <p> <a href="http://www.myhealthdiary.com.tw/nightdiet/" target="_blank">夜食酵素</a> </p>
                 <p> <a href="http://www.myhealthdiary.com.tw/probiotic_classic/" target="_blank">六效乳酸菌經典原味</a> </p>
                 <p> <a href="http://www.myhealthdiary.com.tw/probiotic_Ca/" target="_blank">六效乳酸菌高鈣配方</a> </p>
-                <p> <a href="http://www.myhealthdiary.com.tw/probiotic/">六效乳酸菌速纖配方</a> </p>
+                <p> <a href="http://www.myhealthdiary.com.tw/probiotic/" target="_blank">六效乳酸菌速纖配方</a> </p>
                 <p> <a href="http://www.myhealthdiary.com.tw/probiotic_cranberry/" target="_blank">舒密護蔓越莓益生菌</a> </p>
                 <p> <a href="http://www.myhealthdiary.com.tw/spf/" target="_blank">SPF淨皙精華錠</a> </p>
                 <p> <a href="http://www.myhealthdiary.com.tw/gastro/" target="_blank">衛好健康</a> </p>
@@ -291,7 +325,7 @@
         <a class="shop_btn4" href="https://shop.7-11.com.tw/shop/rui005.faces?ID=210100013808&kw=%E8%B6%85%E5%89%8D%E9%83%A8%E7%BD%B2&pi=0" target="_blank" onclick="clickBuy()">
           <img class="max_width" src="images/buy711.png" alt="">
         </a>
-        <a class="shop_btn3" href="#" onclick="clickBuy()">
+        <a class="shop_btn3" href="https://www.watsons.com.tw/%E3%80%90%E6%88%91%E7%9A%84%E5%81%A5%E5%BA%B7%E6%97%A5%E8%A8%98%E3%80%91%E8%B6%85%E5%89%8D%E9%83%A8%E7%BD%B2%E7%9B%8A%E7%94%9F%E8%8F%8C30%E5%85%A5/p/BP_220048" target="_blank" onclick="clickBuy()">
           <img class="max_width" src="images/watsons.png" alt="">
         </a>
       </div>
@@ -302,6 +336,12 @@
       因個人體質不同，對產品感受會有所差異<br>
       統一藥品股份有限公司PRESIDENT PHARMACEUTICAL CORP. 地址 : 105台北市松山區南京東路四段126號6樓<br>
       產品諮詢專線 : 0800-000-070(09:00-18:00週一到週日) Copyright © 2021 ppc, Inc. All Rights Reserved.
+    </div>
+    <div class="modalBlock firstVideo" style="display: none;">
+      <div class="player">
+        <img src="images/close.png" alt="close" class="close">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3Nwvjy6rcMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
   <script>
@@ -467,7 +507,17 @@
       'ea':'addtocart'
       }
       } } ); 
+      fbq('track', 'ViewContent');
     }
+    $('.close').on('click', function(){
+      $('.firstVideo').hide();
+      // console.log('close');
+      $("iframe").each(function() {
+        var src= $(this).attr('src');
+        $(this).attr('src',src);
+      });
+      // $('.youtube_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    })
   </script>
 </body>
 </html>
