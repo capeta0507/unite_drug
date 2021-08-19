@@ -404,7 +404,8 @@ body{
     height: auto;
 }
 .header .head_list{
-    width: 50%;
+    /* width: 50%; */
+    width: 535px;
     display: flex;
     float: right;
     /* margin-top: 30px; */
@@ -636,7 +637,8 @@ body{
 }
 .witness{
     width: 100%;
-    height: 3650px;
+    /* height: 3650px; */
+    height: auto;
     position: relative;
 }
 .witness .subtitle{
@@ -1118,11 +1120,12 @@ body{
         top: 100px;
         left: 165px;
     }
-    .witness{
+    /* .witness{
         width: 100%;
         height: 3200px;
+        height: auto;
         position: relative;
-    }
+    } */
     .main_container{
         width: 100%;
         max-width: 1200px;
