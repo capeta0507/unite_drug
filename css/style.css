@@ -594,7 +594,7 @@ body{
     margin-top: 10px;
 }
 .supply_tag.supply04{
-    margin-top: -10px;
+    margin-top: 20px;
 }
 .supply_tag.supply05{
     margin-top: 20px;
@@ -1265,7 +1265,7 @@ body{
         margin-top: 0;
     }
     .supply_tag.supply04{
-        margin-top: 0;
+        margin-top: 10px;
     }
     .supply_tag.supply05{
         margin-top: 0;
