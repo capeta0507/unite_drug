@@ -1036,7 +1036,7 @@ body{
     position: relative;
 }
 .mb_people{
-    width: 25%;
+    width: 30%;
     position: relative;
     margin-top: 100px;
     left: 0;
@@ -1086,6 +1086,13 @@ body{
     top: -60px;
     right: -50px;
     cursor: pointer;
+}
+.mb_1123{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: -15%;
+    right: 38%;
 }
 @media screen and (max-width: 1680px){
     .slip_light{
@@ -1173,7 +1180,7 @@ body{
         height: auto;
         position: relative;
         overflow: hidden;
-        padding-bottom: 30px;
+        padding-bottom: 130px;
     }
     .banner .people{
         width: 100%;
@@ -1183,12 +1190,12 @@ body{
         left: 0;
     }
     .banner .big_title{
-        width: 120%;
+        width: 110%;
         height: auto;
         position: relative;
         top: 0;
         left: 0;
-        margin-top: -95px;
+        margin-top: -90px;
     }
     .banner .item{
         width: 100%;
@@ -1611,10 +1618,15 @@ body{
         transition: all .7s;
     }
     .slip_light {
-        width: 33%;
+        /* width: 33%;
         height: 54.8%;
         position: absolute;
         top: 28.9%;
+        right: 36.8%; */
+        width: 33%;
+        height: 49.8%;
+        position: absolute;
+        top: 25.9%;
         right: 36.8%;
     }
     .slip_light:before {
@@ -1644,6 +1656,13 @@ body{
         margin: -28.125% auto 0;
         padding-top: 5.25%;
     }
+    .mb_1123{
+        width: 30%;
+        height: auto;
+        position: absolute;
+        bottom: -4%;
+        right: 39%;
+    }
 }
 @media screen and (max-width: 400px){
     .modalBlock .player{
@@ -1656,5 +1675,24 @@ body{
         max-height: 320px;
         margin: -28.125% auto 0;
         padding-top: 5.25%;
+    }
+    .slip_light {
+        /* width: 33%;
+        height: 54.8%;
+        position: absolute;
+        top: 28.9%;
+        right: 36.8%; */
+        width: 33%;
+        height: 49.8%;
+        position: absolute;
+        top: 24.9%;
+        right: 36.8%;
+    }
+    .mb_1123{
+        width: 30%;
+        height: auto;
+        position: absolute;
+        bottom: -4%;
+        right: 39%;
     }
 }
