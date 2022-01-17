@@ -1036,11 +1036,12 @@ body{
     position: relative;
 }
 .mb_people{
-    width: 30%;
+    width: 25%;
     position: relative;
     margin-top: 100px;
     left: 0;
     transition: all .7s;
+    z-index: 10;
 }
 .mb_people.people_ani{
     left: -50%;
@@ -1088,11 +1089,12 @@ body{
     cursor: pointer;
 }
 .mb_1123{
-    width: 30%;
+    width: 32%;
     height: auto;
     position: absolute;
-    bottom: -15%;
-    right: 38%;
+    bottom: 30%;
+    right: 69%;
+    z-index: 12;
 }
 @media screen and (max-width: 1680px){
     .slip_light{
@@ -1180,7 +1182,6 @@ body{
         height: auto;
         position: relative;
         overflow: hidden;
-        padding-bottom: 130px;
     }
     .banner .people{
         width: 100%;
@@ -1194,7 +1195,8 @@ body{
         height: auto;
         position: relative;
         top: 0;
-        left: 0;
+        /* left: 0; */
+        left: 30px;
         margin-top: -90px;
     }
     .banner .item{
@@ -1554,9 +1556,9 @@ body{
 }
 @media screen and (max-width: 992px){
     .mb_item{
-        width: 80%;
+        width: 60%;
         position: relative;
-        right: 240px;
+        right: 30px;
         transition: all .7s;
     }
     .modalBlock .close {
@@ -1577,6 +1579,10 @@ body{
         max-height: 500px;
         margin: -28.125% auto 0;
         padding-top: 5.25%;
+    }
+    .mb_people{
+        width: 22%;
+        margin-top: 50px;
     }
 }
 @media screen and (max-width: 500px){
@@ -1611,28 +1617,33 @@ body{
         transition: all .5s;
         /* transform: scaleY(1); */
     }
+    .mb_people{
+        width: 21%;
+        margin-top: 50px;
+    }
     .mb_item {
-        width: 80%;
+        width: 65%;
         position: relative;
-        right: 120px;
+        /* right: 120px; */
+        right: 20px;
         transition: all .7s;
     }
     .slip_light {
-        /* width: 33%;
+        width: 33%;
         height: 54.8%;
         position: absolute;
         top: 28.9%;
-        right: 36.8%; */
-        width: 33%;
+        right: 36.8%;
+        /* width: 33%;
         height: 49.8%;
         position: absolute;
         top: 25.9%;
-        right: 36.8%;
+        right: 36.8%; */
     }
     .slip_light:before {
         content: "";
         position: absolute;
-        width: 200%;
+        width: 300%;
         height: 100px; /**光标的宽度，可根据实际调整**/
         z-index: 5;
         background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));
@@ -1660,8 +1671,9 @@ body{
         width: 30%;
         height: auto;
         position: absolute;
-        bottom: -4%;
-        right: 39%;
+        bottom: 30%;
+        right: 70%;
+        z-index: 12;
     }
 }
 @media screen and (max-width: 400px){
@@ -1677,22 +1689,23 @@ body{
         padding-top: 5.25%;
     }
     .slip_light {
-        /* width: 33%;
+        width: 33%;
         height: 54.8%;
         position: absolute;
         top: 28.9%;
-        right: 36.8%; */
-        width: 33%;
+        right: 36.8%;
+        /* width: 33%;
         height: 49.8%;
         position: absolute;
         top: 24.9%;
-        right: 36.8%;
+        right: 36.8%; */
     }
     .mb_1123{
         width: 30%;
         height: auto;
         position: absolute;
-        bottom: -4%;
-        right: 39%;
+        bottom: 30%;
+        right: 70%;
+        z-index: 12;
     }
 }
