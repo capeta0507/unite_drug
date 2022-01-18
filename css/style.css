@@ -1036,7 +1036,7 @@ body{
     position: relative;
 }
 .mb_people{
-    width: 25%;
+    width: 30%;
     position: relative;
     margin-top: 100px;
     left: 0;
@@ -1522,9 +1522,9 @@ body{
     }
     .slip_light {
         width: 33%;
-        height: 54.8%;
+        height: 52.8%;
         position: absolute;
-        top: 28.9%;
+        top: 25.5%;
         right: 35.8%;
     }
     .slip_light:before {
@@ -1558,7 +1558,7 @@ body{
     .mb_item{
         width: 60%;
         position: relative;
-        right: 60px;
+        right: 150px;
         transition: all .7s;
     }
     .modalBlock .close {
@@ -1581,7 +1581,7 @@ body{
         padding-top: 5.25%;
     }
     .mb_people{
-        width: 24%;
+        width: 30%;
         margin-top: 50px;
     }
 }
@@ -1618,27 +1618,21 @@ body{
         /* transform: scaleY(1); */
     }
     .mb_people{
-        width: 24%;
+        width: 30%;
         margin-top: 50px;
     }
     .mb_item {
         width: 65%;
         position: relative;
-        /* right: 120px; */
-        right: 45px;
+        right: 100px;
         transition: all .7s;
     }
     .slip_light {
         width: 33%;
         height: 54.8%;
         position: absolute;
-        top: 28.9%;
-        right: 36.8%;
-        /* width: 33%;
-        height: 49.8%;
-        position: absolute;
         top: 25.9%;
-        right: 36.8%; */
+        right: 36.8%;
     }
     .slip_light:before {
         content: "";
@@ -1692,13 +1686,8 @@ body{
         width: 33%;
         height: 54.8%;
         position: absolute;
-        top: 28.9%;
-        right: 36.8%;
-        /* width: 33%;
-        height: 49.8%;
-        position: absolute;
-        top: 24.9%;
-        right: 36.8%; */
+        top: 25.9%;
+        right: 37%;
     }
     .mb_1123{
         width: 30%;
